@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-29T08:22:05.018Z</updated>
+  <updated>2022-06-29T08:50:10.990Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,24 +18,54 @@
   
   <entry>
     <title>六月随笔</title>
-    <link href="http://example.com/2022/06/28/%E5%85%AD%E6%9C%88%E9%9A%8F%E7%AC%94/"/>
-    <id>http://example.com/2022/06/28/六月随笔/</id>
-    <published>2022-06-28T17:01:22.000Z</published>
-    <updated>2022-06-29T08:22:05.018Z</updated>
+    <link href="http://example.com/2022/06/28/June-Essay/"/>
+    <id>http://example.com/2022/06/28/June-Essay/</id>
+    <published>2022-06-28T17:42:12.000Z</published>
+    <updated>2022-06-29T08:50:10.990Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="定时器-setInterval-和-setTimeout"><a href="#定时器-setInterval-和-setTimeout" class="headerlink" title="定时器 setInterval 和 setTimeout"></a>定时器 setInterval 和 setTimeout</h2><p>前端定时器 setInterval 和 setTimeout setInterval</p><h4 id="循环执行"><a href="#循环执行" class="headerlink" title="循环执行"></a>循环执行</h4><p>循环执行就是设置一个时间间隔，每过一段时间都会执行一次这个方法,直到这个定时器被销毁掉。  用法是setInterval（“方法名或方法”，“延时”）， 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔（毫秒）。  设置循环执行 </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">timer</span> = <span class="built_in">setInterval</span>(<span class="variable language_">this</span>.<span class="property">updataDevice</span>, <span class="number">5000</span>) </span><br></pre></td></tr></table></figure><p>&#x2F;&#x2F; 第一个参数：this.updataDevice 是ts中的方法，只写方法名不写括号。<br>&#x2F;&#x2F; 第二个参数：5000 表示延时，毫秒，5000毫秒&#x3D;5秒，即执行完本次后，隔5秒再次执行 1 2 3 </p><h4 id="销毁定时器"><a href="#销毁定时器" class="headerlink" title="销毁定时器"></a>销毁定时器</h4><p>案例是vue写的，用vue举例：     </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">beforeDestroy() &#123;  // 组件销毁前执行       </span><br><span class="line">    clearInterval(this.timer)  // 清除定时器       </span><br><span class="line">    this.timer = null  // 定时器的变量赋值null     </span><br><span class="line">&#125;, </span><br></pre></td></tr></table></figure><h4 id="vue2的生命周期函数"><a href="#vue2的生命周期函数" class="headerlink" title="vue2的生命周期函数"></a>vue2的生命周期函数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">beforeCreate: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeCreate 创建前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       created: function () &#123;</span><br><span class="line">           console.group(&#x27;created 创建完毕状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeMount: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeMount 挂载前状态===============》&#x27;);//已被初始化</span><br><span class="line">       &#125;,</span><br><span class="line">       mounted: function () &#123;</span><br><span class="line">           console.group(&#x27;mounted 挂载结束状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeUpdate: function () &#123;</span><br><span class="line">           alert(&quot;更新前状态&quot;);</span><br><span class="line">           console.group(&#x27;beforeUpdate 更新前状态===============》&#x27;); //这里指的是页面渲染新数据之前</span><br><span class="line">           alert(&quot;更新前状态2&quot;);</span><br><span class="line">       &#125;,</span><br><span class="line">       updated: function () &#123;</span><br><span class="line">           console.group(&#x27;updated 更新完成状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeDestroy: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeDestroy 销毁前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       destroyed: function () &#123;</span><br><span class="line">           console.group(&#x27;destroyed 销毁完成状态===============》&#x27;);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure><h4 id="setTimeout-定时执行"><a href="#setTimeout-定时执行" class="headerlink" title="setTimeout 定时执行"></a>setTimeout 定时执行</h4><p>定时执行setTimeout是设置一个时间，等待时间到达的时候只执行一次，但是执行完以后定时器还在，只是没有运行。  用法是 setTimeout(“方法名或方法”, “延时”); 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔。  </p><p>设置定时执行  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(() =&gt; &#123;          </span><br><span class="line">this.showMarker()  // 执行的方法        </span><br><span class="line">&#125;, 1000)  // 时间 1000毫秒 = 1秒</span><br></pre></td></tr></table></figure><p> 原文链接：<a href="https://blog.csdn.net/weixin_42776111/article/details/102667081">https://blog.csdn.net/weixin_42776111/article/details/102667081</a></p>]]></content>
+    <content type="html"><![CDATA[<p>风决定要走，云怎么挽留…</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;定时器-setInterval-和-setTimeout&quot;&gt;&lt;a href=&quot;#定时器-setInterval-和-setTimeout&quot; class=&quot;headerlink&quot; title=&quot;定时器 setInterval 和 setTimeout&quot;&gt;&lt;/a&gt;定时
+        &lt;p&gt;风决定要走，云怎么挽留…&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Emotion" scheme="http://example.com/categories/Emotion/"/>
+    
+    
+      <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习笔记</title>
+    <link href="http://example.com/2022/06/28/timer/"/>
+    <id>http://example.com/2022/06/28/timer/</id>
+    <published>2022-06-28T17:01:22.000Z</published>
+    <updated>2022-06-29T08:40:07.739Z</updated>
+    
+    <content type="html"><![CDATA[<p>前端定时器 setInterval 和 setTimeout setInterval</p><p>项目：Appeon服务监控</p><p>职责：实现前端页面的展示</p><p>功能需求：实时获取服务状态展示，需要设置定时器</p><h4 id="循环执行"><a href="#循环执行" class="headerlink" title="循环执行"></a>循环执行</h4><p>循环执行就是设置一个时间间隔，每过一段时间都会执行一次这个方法,直到这个定时器被销毁掉。  用法是setInterval（“方法名或方法”，“延时”）， 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔（毫秒）。  设置循环执行 </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">timer</span> = <span class="built_in">setInterval</span>(<span class="variable language_">this</span>.<span class="property">updataDevice</span>, <span class="number">5000</span>) </span><br></pre></td></tr></table></figure><p>&#x2F;&#x2F; 第一个参数：this.updataDevice 是ts中的方法，只写方法名不写括号。<br>&#x2F;&#x2F; 第二个参数：5000 表示延时，毫秒，5000毫秒&#x3D;5秒，即执行完本次后，隔5秒再次执行 1 2 3 </p><h4 id="销毁定时器"><a href="#销毁定时器" class="headerlink" title="销毁定时器"></a>销毁定时器</h4><p>案例是vue写的，用vue举例：     </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">beforeDestroy() &#123;  // 组件销毁前执行       </span><br><span class="line">    clearInterval(this.timer)  // 清除定时器       </span><br><span class="line">    this.timer = null  // 定时器的变量赋值null     </span><br><span class="line">&#125;, </span><br></pre></td></tr></table></figure><h4 id="vue2的生命周期函数"><a href="#vue2的生命周期函数" class="headerlink" title="vue2的生命周期函数"></a>vue2的生命周期函数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">beforeCreate: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeCreate 创建前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       created: function () &#123;</span><br><span class="line">           console.group(&#x27;created 创建完毕状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeMount: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeMount 挂载前状态===============》&#x27;);//已被初始化</span><br><span class="line">       &#125;,</span><br><span class="line">       mounted: function () &#123;</span><br><span class="line">           console.group(&#x27;mounted 挂载结束状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeUpdate: function () &#123;</span><br><span class="line">           alert(&quot;更新前状态&quot;);</span><br><span class="line">           console.group(&#x27;beforeUpdate 更新前状态===============》&#x27;); //这里指的是页面渲染新数据之前</span><br><span class="line">           alert(&quot;更新前状态2&quot;);</span><br><span class="line">       &#125;,</span><br><span class="line">       updated: function () &#123;</span><br><span class="line">           console.group(&#x27;updated 更新完成状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeDestroy: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeDestroy 销毁前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       destroyed: function () &#123;</span><br><span class="line">           console.group(&#x27;destroyed 销毁完成状态===============》&#x27;);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure><h4 id="setTimeout-定时执行"><a href="#setTimeout-定时执行" class="headerlink" title="setTimeout 定时执行"></a>setTimeout 定时执行</h4><p>定时执行setTimeout是设置一个时间，等待时间到达的时候只执行一次，但是执行完以后定时器还在，只是没有运行。  用法是 setTimeout(“方法名或方法”, “延时”); 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔。  </p><p>设置定时执行  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(() =&gt; &#123;          </span><br><span class="line">this.showMarker()  // 执行的方法        </span><br><span class="line">&#125;, 1000)  // 时间 1000毫秒 = 1秒</span><br></pre></td></tr></table></figure><p> 原文链接：<a href="https://blog.csdn.net/weixin_42776111/article/details/102667081">https://blog.csdn.net/weixin_42776111/article/details/102667081</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前端定时器 setInterval 和 setTimeout setInterval&lt;/p&gt;
+&lt;p&gt;项目：Appeon服务监控&lt;/p&gt;
+&lt;p&gt;职责：实现前端页面的展示&lt;/p&gt;
+&lt;p&gt;功能需求：实时获取服务状态展示，需要设置定时器&lt;/p&gt;
+&lt;h4 id=&quot;循环执行&quot;&gt;&lt;a h
       
     
     </summary>
     
     
-      <category term="学习笔记" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="Vue" scheme="http://example.com/tags/Vue/"/>
     
       <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
