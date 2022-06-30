@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-29T08:50:10.990Z</updated>
+  <updated>2022-06-30T03:10:03.645Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日記-20220630</title>
+    <link href="http://example.com/2022/06/30/20220629/"/>
+    <id>http://example.com/2022/06/30/20220629/</id>
+    <published>2022-06-30T11:40:33.000Z</published>
+    <updated>2022-06-30T03:10:03.645Z</updated>
+    
+    <content type="html"><![CDATA[<p>理想中的高乘風是什麽樣子的？<br>在一起四個月是不是有些失望，與腦海中的形象不一致？沒有達到預期？</p><p>并不是想象中那麽優秀，相反，早已千瘡百孔，迷茫，逃避。知道爲什麽‘喜歡’熬夜嗎？<br>因爲夜晚的漆黑寧靜讓我可以逃避一切。</p><p>冲那時起，對一切事物失去興趣。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;理想中的高乘風是什麽樣子的？&lt;br&gt;在一起四個月是不是有些失望，與腦海中的形象不一致？沒有達到預期？&lt;/p&gt;
+&lt;p&gt;并不是想象中那麽優秀，相反，早已千瘡百孔，迷茫，逃避。知道爲什麽‘喜歡’熬夜嗎？&lt;br&gt;因爲夜晚的漆黑寧靜讓我可以逃避一切。&lt;/p&gt;
+&lt;p&gt;冲那時起，對一切事
+      
+    
+    </summary>
+    
+      <category term="Emotion" scheme="http://example.com/categories/Emotion/"/>
+    
+    
+      <category term="周记" scheme="http://example.com/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>六月随笔</title>
@@ -72,11 +99,11 @@
   </entry>
   
   <entry>
-    <title>Blog</title>
+    <title>Vico&#39;s First Blog</title>
     <link href="http://example.com/2022/06/28/Blog/"/>
     <id>http://example.com/2022/06/28/Blog/</id>
     <published>2022-06-28T15:07:40.000Z</published>
-    <updated>2022-06-29T06:30:43.300Z</updated>
+    <updated>2022-06-30T01:00:59.187Z</updated>
     
     <summary type="html">
     
