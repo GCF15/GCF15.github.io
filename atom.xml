@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-30T03:10:03.645Z</updated>
+  <updated>2022-07-04T07:44:31.038Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建Hexo博客指引</title>
+    <link href="http://example.com/2022/07/03/HexoGuide/"/>
+    <id>http://example.com/2022/07/03/HexoGuide/</id>
+    <published>2022-07-03T11:52:59.000Z</published>
+    <updated>2022-07-04T07:44:31.038Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建个人博客记录点滴，走出阴暗！</p><p>2019年的时候在舍友润饼的介绍下知道Hexo这个东西，当时觉得挺新奇的，捣鼓了一阵，确实捣鼓出来了。但是过程嘛，很心累，原因确实是当时学习能力有限，网上东找找西找找资料，找不到头绪。</p><p>还有当时精神状态也很差。以后再回过头去聊当时的情况。</p><p>图片测试</p><p><img src="/.com//Capture.PNG"></p><p><img src="/.com//!--swig%EF%BF%BC0--"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭建个人博客记录点滴，走出阴暗！&lt;/p&gt;
+&lt;p&gt;2019年的时候在舍友润饼的介绍下知道Hexo这个东西，当时觉得挺新奇的，捣鼓了一阵，确实捣鼓出来了。但是过程嘛，很心累，原因确实是当时学习能力有限，网上东找找西找找资料，找不到头绪。&lt;/p&gt;
+&lt;p&gt;还有当时精神状态也很差。以
+      
+    
+    </summary>
+    
+      <category term="Study" scheme="http://example.com/categories/Study/"/>
+    
+    
+      <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>日記-20220630</title>
