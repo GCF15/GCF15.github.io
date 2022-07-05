@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-04T07:44:31.038Z</updated>
+  <updated>2022-07-04T09:41:38.061Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/07/03/HexoGuide/"/>
     <id>http://example.com/2022/07/03/HexoGuide/</id>
     <published>2022-07-03T11:52:59.000Z</published>
-    <updated>2022-07-04T07:44:31.038Z</updated>
+    <updated>2022-07-04T09:41:38.061Z</updated>
     
-    <content type="html"><![CDATA[<p>搭建个人博客记录点滴，走出阴暗！</p><p>2019年的时候在舍友润饼的介绍下知道Hexo这个东西，当时觉得挺新奇的，捣鼓了一阵，确实捣鼓出来了。但是过程嘛，很心累，原因确实是当时学习能力有限，网上东找找西找找资料，找不到头绪。</p><p>还有当时精神状态也很差。以后再回过头去聊当时的情况。</p><p>图片测试</p><p><img src="/.com//Capture.PNG"></p><p><img src="/.com//!--swig%EF%BF%BC0--"></p>]]></content>
+    <content type="html"><![CDATA[<p>搭建个人博客记录点滴，走出阴暗！</p><p>2019年的时候在舍友润饼的介绍下知道Hexo这个东西，当时觉得挺新奇的，捣鼓了一阵，确实捣鼓出来了。但是过程嘛，很心累，原因确实是当时学习能力有限，网上东找找西找找资料，找不到头绪。</p><p>还有当时精神状态也很差。以后再回过头去聊当时的情况。</p><p>图片测试</p><p><img src="/.com//Capture.PNG"></p>]]></content>
     
     <summary type="html">
     
@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>日記-20220630</title>
+    <title>日記</title>
     <link href="http://example.com/2022/06/30/20220629/"/>
     <id>http://example.com/2022/06/30/20220629/</id>
     <published>2022-06-30T11:40:33.000Z</published>
-    <updated>2022-06-30T03:10:03.645Z</updated>
+    <updated>2022-07-05T09:35:40.829Z</updated>
     
     <content type="html"><![CDATA[<p>理想中的高乘風是什麽樣子的？<br>在一起四個月是不是有些失望，與腦海中的形象不一致？沒有達到預期？</p><p>并不是想象中那麽優秀，相反，早已千瘡百孔，迷茫，逃避。知道爲什麽‘喜歡’熬夜嗎？<br>因爲夜晚的漆黑寧靜讓我可以逃避一切。</p><p>冲那時起，對一切事物失去興趣。</p>]]></content>
     
@@ -71,11 +71,11 @@
   </entry>
   
   <entry>
-    <title>六月随笔</title>
+    <title>随笔</title>
     <link href="http://example.com/2022/06/28/June-Essay/"/>
     <id>http://example.com/2022/06/28/June-Essay/</id>
     <published>2022-06-28T17:42:12.000Z</published>
-    <updated>2022-06-29T08:50:10.990Z</updated>
+    <updated>2022-07-05T09:36:41.832Z</updated>
     
     <content type="html"><![CDATA[<p>风决定要走，云怎么挽留…</p>]]></content>
     
@@ -97,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>学习笔记</title>
+    <title>Vue定时器</title>
     <link href="http://example.com/2022/06/28/timer/"/>
     <id>http://example.com/2022/06/28/timer/</id>
     <published>2022-06-28T17:01:22.000Z</published>
-    <updated>2022-06-29T08:40:07.739Z</updated>
+    <updated>2022-07-05T09:36:23.433Z</updated>
     
     <content type="html"><![CDATA[<p>前端定时器 setInterval 和 setTimeout setInterval</p><p>项目：Appeon服务监控</p><p>职责：实现前端页面的展示</p><p>功能需求：实时获取服务状态展示，需要设置定时器</p><h4 id="循环执行"><a href="#循环执行" class="headerlink" title="循环执行"></a>循环执行</h4><p>循环执行就是设置一个时间间隔，每过一段时间都会执行一次这个方法,直到这个定时器被销毁掉。  用法是setInterval（“方法名或方法”，“延时”）， 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔（毫秒）。  设置循环执行 </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">timer</span> = <span class="built_in">setInterval</span>(<span class="variable language_">this</span>.<span class="property">updataDevice</span>, <span class="number">5000</span>) </span><br></pre></td></tr></table></figure><p>&#x2F;&#x2F; 第一个参数：this.updataDevice 是ts中的方法，只写方法名不写括号。<br>&#x2F;&#x2F; 第二个参数：5000 表示延时，毫秒，5000毫秒&#x3D;5秒，即执行完本次后，隔5秒再次执行 1 2 3 </p><h4 id="销毁定时器"><a href="#销毁定时器" class="headerlink" title="销毁定时器"></a>销毁定时器</h4><p>案例是vue写的，用vue举例：     </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">beforeDestroy() &#123;  // 组件销毁前执行       </span><br><span class="line">    clearInterval(this.timer)  // 清除定时器       </span><br><span class="line">    this.timer = null  // 定时器的变量赋值null     </span><br><span class="line">&#125;, </span><br></pre></td></tr></table></figure><h4 id="vue2的生命周期函数"><a href="#vue2的生命周期函数" class="headerlink" title="vue2的生命周期函数"></a>vue2的生命周期函数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">beforeCreate: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeCreate 创建前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       created: function () &#123;</span><br><span class="line">           console.group(&#x27;created 创建完毕状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeMount: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeMount 挂载前状态===============》&#x27;);//已被初始化</span><br><span class="line">       &#125;,</span><br><span class="line">       mounted: function () &#123;</span><br><span class="line">           console.group(&#x27;mounted 挂载结束状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeUpdate: function () &#123;</span><br><span class="line">           alert(&quot;更新前状态&quot;);</span><br><span class="line">           console.group(&#x27;beforeUpdate 更新前状态===============》&#x27;); //这里指的是页面渲染新数据之前</span><br><span class="line">           alert(&quot;更新前状态2&quot;);</span><br><span class="line">       &#125;,</span><br><span class="line">       updated: function () &#123;</span><br><span class="line">           console.group(&#x27;updated 更新完成状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       beforeDestroy: function () &#123;</span><br><span class="line">           console.group(&#x27;beforeDestroy 销毁前状态===============》&#x27;);</span><br><span class="line">       &#125;,</span><br><span class="line">       destroyed: function () &#123;</span><br><span class="line">           console.group(&#x27;destroyed 销毁完成状态===============》&#x27;);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure><h4 id="setTimeout-定时执行"><a href="#setTimeout-定时执行" class="headerlink" title="setTimeout 定时执行"></a>setTimeout 定时执行</h4><p>定时执行setTimeout是设置一个时间，等待时间到达的时候只执行一次，但是执行完以后定时器还在，只是没有运行。  用法是 setTimeout(“方法名或方法”, “延时”); 第一个参数为方法名或者方法，注意为方法名的时候不要加括号，第二个参数为时间间隔。  </p><p>设置定时执行  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(() =&gt; &#123;          </span><br><span class="line">this.showMarker()  // 执行的方法        </span><br><span class="line">&#125;, 1000)  // 时间 1000毫秒 = 1秒</span><br></pre></td></tr></table></figure><p> 原文链接：<a href="https://blog.csdn.net/weixin_42776111/article/details/102667081">https://blog.csdn.net/weixin_42776111/article/details/102667081</a></p>]]></content>
     
@@ -122,41 +122,6 @@
       <category term="Vue" scheme="http://example.com/tags/Vue/"/>
     
       <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vico&#39;s First Blog</title>
-    <link href="http://example.com/2022/06/28/Blog/"/>
-    <id>http://example.com/2022/06/28/Blog/</id>
-    <published>2022-06-28T15:07:40.000Z</published>
-    <updated>2022-06-30T01:00:59.187Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/06/28/hello-world/"/>
-    <id>http://example.com/2022/06/28/hello-world/</id>
-    <published>2022-06-28T07:43:22.265Z</published>
-    <updated>2022-06-29T07:42:00.016Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for
-      
-    
-    </summary>
-    
     
   </entry>
   
